@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useState } from 'react'
 
 export default function PostCard({ post, onDelete, canDelete = true, currentUser }) {
 
@@ -17,6 +17,12 @@ export default function PostCard({ post, onDelete, canDelete = true, currentUser
     } catch {
       return 'Unknown date';
     }
+  };
+
+  const [imageError, setImageError] = useState(false);
+
+  const handleImgError = () => {
+    setImageError(true);
   };
 
   if (!post) 
@@ -45,8 +51,15 @@ export default function PostCard({ post, onDelete, canDelete = true, currentUser
               src={post.imageUrl}
               alt={post.title}
               className="w-full h-auto max-h-96 object-contain"
+              onError={handleImgError}
+              style={{ display: imageError ? 'none' : 'block' }}
             />
           </div>
+        </div>
+      )}
+      {post.imageUrl && imageError===true && (
+        <div className="mb-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg text-yellow-700 text-sm">
+          🖼️ Image could not be loaded
         </div>
       )}
 
