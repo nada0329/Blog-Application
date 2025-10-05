@@ -1,4 +1,22 @@
 {
-  "users": [],
-  "posts": []
+  "users": [
+    {
+      "id": "97a1",
+      "name": "user1",
+      "email": "user1@user.com",
+      "password": "123456"
+    }
+  ],
+  "posts": [
+    {
+      "id": "999a",
+      "title": "hello",
+      "content": "my first post",
+      "imageUrl": "https://picsum.photos/800/400",
+      "author": "user1",
+      "date": "2025-10-05T16:00:05.687Z",
+      "userId": "97a1"
+    }
+
+  ]
 }
