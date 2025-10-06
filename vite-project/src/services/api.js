@@ -17,15 +17,13 @@ export const userAPI= {
     // create user new
     create: (user) => api.post('/users', user),
     // Login - search by email and password if authinticated 
-    validUserLogin: (email, password) => {
+    validUserLogin: (email, password) => 
         api.get('/users' , {
             params:{
                 email: email,
                 password: password
             }
-        })
-
-    },
+        }),
     // Register - search if mail exist
     checkMailExist: (email) => {
         api.get('/users' , {

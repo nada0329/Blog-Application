@@ -41,6 +41,12 @@ export default function Home({ user, isAuthenticated }) {
                     {isAuthenticated === false ? (
                         <div>
                             <p className="mb-4">Login to create posts</p>
+                            <Link 
+                                to="/login"
+                                className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+                            >
+                            Login to Get Started
+                            </Link>
                         </div>
                     ) : (
                         <p className="text-blue-600 font-medium">
