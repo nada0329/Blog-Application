@@ -12,15 +12,6 @@ export default function App() {
 
   
   const [user, setUser] = useState(null);
-  //useEffect(() => {
-  //  loadUser();
-  //}, []);
-//
-//
-  //const loadUsers = async () => {
-  //  const response = await userAPI.getAll();
-  //  setUser(response.data);
-  //}
 
     // Login function
   const login = (userData) => {
@@ -32,9 +23,7 @@ export default function App() {
     setUser(null);
   };
 
-
   const isAuthenticated = user !== null;
-
 
   return (
     <Router>
