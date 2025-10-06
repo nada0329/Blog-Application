@@ -50,15 +50,15 @@ export default function PostCard({ post, onDelete, canDelete = false, currentUse
 
       {/* IMAGE - Enhanced with aspect ratio */}
       {post.imageUrl && !imageError && (
-        <div className="mb-6">
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl shadow-md bg-gray-100">
-            <img
-              src={post.imageUrl}
-              alt={post.title}
-              className="w-full h-full object-cover"
-              onError={handleImgError}
-            />
-          </div>
+        <div className="mb-6 flex justify-center">
+            <div className="relative max-w-full rounded-xl shadow-md bg-gray-100">
+                <img
+                src={post.imageUrl}
+                alt={post.title}
+                className="max-w-full max-h-96 object-contain rounded-xl"
+                onError={handleImgError}
+                />
+            </div>
         </div>
       )}
       
