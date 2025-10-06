@@ -48,7 +48,7 @@ export default function PostCard({ post, onDelete, canDelete = false, currentUse
         {post.content}
       </p>
 
-      {/* IMAGE - Enhanced with aspect ratio */}
+      {/* IMAGE - Enhanced with dynamic ratio */}
       {post.imageUrl && !imageError && (
         <div className="mb-6 flex justify-center">
             <div className="relative max-w-full rounded-xl shadow-md bg-gray-100">

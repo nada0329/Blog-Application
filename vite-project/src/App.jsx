@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -13,14 +13,27 @@ export default function App() {
   
   const [user, setUser] = useState(null);
 
+  // this logic to maintain user login in browser data
+  // Check for saved user data when app loads
+  useEffect(() => {
+    const savedUser = localStorage.getItem('blogUser');
+    if (savedUser) {
+      setUser(JSON.parse(savedUser));      
+    }
+  }, []);
+
     // Login function
   const login = (userData) => {
     setUser(userData);
+    // Save user data to local storage
+    localStorage.setItem('blogUser', JSON.stringify(userData));
   };
 
   // Logout function
   const logout = () => {
     setUser(null);
+    // Remove user data from local storage
+    localStorage.removeItem('blogUser');
   };
 
   const isAuthenticated = user !== null;
