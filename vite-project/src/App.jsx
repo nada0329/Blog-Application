@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AddPost from './pages/AddPost';
+import EditPost from './pages/EditPost';
 import FloatingAddButton from './components/FloatingAddButton';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -47,6 +48,11 @@ export default function App() {
             user={user}
             isAuthenticated={isAuthenticated}
           />} />
+        <Route path="/edit-post/:id" element={
+          <EditPost 
+            user={user}
+            isAuthenticated={isAuthenticated}
+          />} />  
       </Routes>
       {/* Show floating button only when user is authenticated */}
       {isAuthenticated && <FloatingAddButton />}

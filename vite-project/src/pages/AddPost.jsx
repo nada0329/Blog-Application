@@ -35,7 +35,7 @@ export default function AddPost({ user, isAuthenticated }) {
 
         // create the post 
         const newPost = {
-        title: title,  // only text with no spaces in beginning or end
+        title: title.trim(),  // only text with no spaces in beginning or end
         content: content,
         imageUrl: imageUrl.trim(), // only link with no spaces in beginning or end
         author: user.name,

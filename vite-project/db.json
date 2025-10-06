@@ -10,7 +10,7 @@
       "id": "97a2",
       "name": "user2",
       "email": "user2@user.com",
-      "password": "123456"
+      "password": "1234567"
     },
     {
       "id": "c962",
@@ -22,30 +22,75 @@
   "posts": [
     {
       "id": "999a",
-      "title": "hello",
-      "content": "my first post",
-      "imageUrl": "https://picsum.photos/800/400",
+      "title": "Sunrise Serenity",
+      "content": "Woke up at 4 AM to catch this magical sunrise. There's something so peaceful about watching the world wake up. The colors painted across the sky reminded me that every day is a fresh start.",
+      "imageUrl": "https://www.mappls.com/place/QSSBI5_1665572027029_0.png",
       "author": "user1",
-      "date": "2025-10-05T16:00:05.687Z",
+      "date": "2025-10-06T13:08:00.283Z",
       "userId": "97a1"
     },
     {
       "id": "999b",
-      "title": "hello",
-      "content": "my second post",
-      "imageUrl": "https://picsum.photos/800/400",
+      "title": "My New Favorite Writing Spot",
+      "content": "Found this cozy corner in a local café. The smell of fresh coffee, the soft chatter, and the perfect lighting make this my new creative sanctuary. Sometimes the best moments are found in ordinary places.",
+      "imageUrl": "https://i0.wp.com/www.helpingwritersbecomeauthors.com/wp-content/uploads/2016/11/11-Writing-Outside-in-the-Indian-Summer.jpg?resize=488%2C366&ssl=1",
       "author": "user2",
       "date": "2025-10-06T16:00:05.687Z",
       "userId": "97a2"
     },
     {
       "id": "97d7",
-      "title": "test",
-      "content": "test post",
-      "imageUrl": "https://picsum.photos/600/600",
+      "title": "Above the Clouds",
+      "content": "After 3 hours of hiking, we reached the summit just as the clouds broke. Standing above the world, everything felt so small yet so significant. This climb taught me that the best views come after the hardest climbs.",
+      "imageUrl": "https://cms.accuweather.com/wp-content/uploads/2019/11/cropped-joshua-earle-Dwheufds6kQ-unsplash.jpg",
       "author": "user3",
       "date": "2025-10-06T11:03:32.533Z",
       "userId": "c962"
+    },
+    {
+      "id": "70d9",
+      "title": "Coffee and Raindrops",
+      "content": "There's something magical about rainy afternoons. The sound of drops on the window, a warm drink, and time to just be. Today I'm grateful for slow moments that let us pause and appreciate the simple things.",
+      "imageUrl": "https://thumbs.dreamstime.com/b/coffee-cup-raindrops-city-street-table-great-creative-professional-projects-365160683.jpg",
+      "author": "user1",
+      "date": "2025-10-06T13:34:01.970Z",
+      "userId": "97a1"
+    },
+    {
+      "id": "d450",
+      "title": "Unexpected Beauty in the City",
+      "content": "Stumbled upon this incredible mural during my evening walk. It's amazing how art can transform ordinary walls into stories. This piece spoke to me about finding color in unexpected places.",
+      "imageUrl": "https://thumbs.dreamstime.com/b/easter-eggs-urban-landscape-vibrant-exploration-renewal-hope-photography-discover-unexpected-beauty-city-355941690.jpg",
+      "author": "user1",
+      "date": "2025-10-06T13:35:24.955Z",
+      "userId": "97a1"
+    },
+    {
+      "id": "f21f",
+      "title": "Sunday Baking Tradition",
+      "content": "Nothing beats the smell of fresh bread filling the house. This has become our family's Sunday ritual - flour everywhere, laughter, and the satisfaction of creating something from scratch. Sometimes the simplest traditions create the warmest memories.",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x4000+0+0/resize/1100/quality/50/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F52%2F2c%2F222f010c44acb6538427a6f836f6%2Fshprinzy-2.jpg",
+      "author": "user3",
+      "date": "2025-10-06T13:36:46.551Z",
+      "userId": "c962"
+    },
+    {
+      "id": "9d6e",
+      "title": "Lost in Stories",
+      "content": "Spent the afternoon wandering through this charming bookstore. There's magic in shelves filled with stories waiting to be discovered. Found a hidden gem about mountain adventures that I can't wait to dive into.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSarrTgkjFRW7ltEMCg7ebrOGABlfdcccB-iw&s",
+      "author": "user2",
+      "date": "2025-10-06T13:38:10.111Z",
+      "userId": "97a2"
+    },
+    {
+      "id": "d489",
+      "title": "When the City Sleeps",
+      "content": "ate night walk through empty streets. The city has a different personality when everyone's asleep - quiet, peaceful, and full of secrets. These quiet moments help me reconnect with myself amidst the urban chaos.",
+      "imageUrl": "https://img.freepik.com/premium-photo/person-walking-thoughtfully-along-quiet-street-dusk_1158260-40118.jpg",
+      "author": "user2",
+      "date": "2025-10-06T13:40:08.565Z",
+      "userId": "97a2"
     }
   ]
 }

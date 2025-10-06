@@ -16,10 +16,6 @@ export default function Header({ user, isAuthenticated, onLogout }) {
             
             {isAuthenticated ? (
               <>
-                {/* Keep Add Post in header for desktop users */}
-                <Link to="/add-post" className="hover:text-green-200 transition-colors hidden md:block">
-                  Add Post
-                </Link>
                 <span className="text-lime-200">Welcome, {user?.name}</span>
                 <button 
                   onClick={onLogout}

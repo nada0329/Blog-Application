@@ -1,4 +1,5 @@
 import React , { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function PostCard({ post, onDelete, canDelete = false, currentUser }) {
 
@@ -76,12 +77,22 @@ export default function PostCard({ post, onDelete, canDelete = false, currentUse
         </div>
 
         {canDelete && isPostOwner && (
-          <button
-            onClick={() => onDelete(post.id)}
-            className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors shadow-sm hover:shadow-md"
-          >
-            Delete Post
-          </button>
+          <div className="flex space-x-2">
+            {/* Edit Button */}
+            <Link
+              to={`/edit-post/${post.id}`}
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm hover:shadow-md"
+            >
+              Edit
+            </Link>
+            {/* Delete Button */}
+            <button
+              onClick={() => onDelete(post.id)}
+              className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors shadow-sm hover:shadow-md"
+            >
+              Delete
+            </button>
+          </div>
         )}
       </div>
     </div>
