@@ -49,35 +49,34 @@ HTTP Client: Axios
 Icons: Heroicons (SVG)
 
 📁 Project Structure
-text
 src/
-├── components/          # Reusable UI components
-│   ├── FloatingAddButton.js
-│   ├── Header.js
-│   └── PostCard.js
-├── pages/              # Page components
-│   ├── AddPost.js
-│   ├── EditPost.js
-│   ├── Home.js
-│   ├── Login.js
-│   └── Register.js
-├── services/           # API integration
-│   └── api.js
-└── App.js             # Main application component
+   / components/          # Reusable UI components
+      / FloatingAddButton.js
+      / Header.js
+      / PostCard.js
+   / pages/              # Page components
+      / AddPost.js
+      / EditPost.js
+      / Home.js
+      / Login.js
+      / Register.js
+   / services/           # API integration
+      / api.js
+   / App.js             # Main application component
 *****************************************************************************************************
-make sure you rub backend json server-> json-server --watch db.json --port 3001
+make sure you run backend json server-> json-server --watch db.json --port 3001
 run your app-> npm run dev
 
 some users already exists to try them 
 ---
-"name": "user1",
-"email": "user1@user.com",
+"name": "user1"
+"email": "user1@user.com"
 "password": "123456"
 ----
-"name": "user2",
-"email": "user2@user.com",
+"name": "user2"
+"email": "user2@user.com"
 "password": "1234567"
 ---
-"name": "user3",
-"email": "user3@user.com",
+"name": "user3"
+"email": "user3@user.com"
 "password": "12345678"
