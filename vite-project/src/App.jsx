@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import PostCard from './components/PostCard'
-import api, { postAPI , userAPI} from './services/api'
+import React, { useState } from 'react'
 import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AddPost from './pages/AddPost';
+import FloatingAddButton from './components/FloatingAddButton';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -49,10 +48,8 @@ export default function App() {
             isAuthenticated={isAuthenticated}
           />} />
       </Routes>
-
-
-
-
+      {/* Show floating button only when user is authenticated */}
+      {isAuthenticated && <FloatingAddButton />}
 
     </Router>
   )

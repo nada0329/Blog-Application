@@ -37,6 +37,15 @@
       "author": "user2",
       "date": "2025-10-06T16:00:05.687Z",
       "userId": "97a2"
+    },
+    {
+      "id": "97d7",
+      "title": "test",
+      "content": "test post",
+      "imageUrl": "https://picsum.photos/600/600",
+      "author": "user3",
+      "date": "2025-10-06T11:03:32.533Z",
+      "userId": "c962"
     }
   ]
 }
