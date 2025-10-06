@@ -1,6 +1,6 @@
 import React , { useState } from 'react'
 
-export default function PostCard({ post, onDelete, canDelete = true, currentUser }) {
+export default function PostCard({ post, onDelete, canDelete = false, currentUser }) {
 
   const isPostOwner = currentUser && (post.userId === currentUser.id);
 
