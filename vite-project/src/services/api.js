@@ -25,13 +25,12 @@ export const userAPI= {
             }
         }),
     // Register - search if mail exist
-    checkMailExist: (email) => {
+    checkMailExist: (email) => 
         api.get('/users' , {
             params:{
                 email: email
             }
         })
-    }
 
 }
 

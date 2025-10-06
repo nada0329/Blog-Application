@@ -11,6 +11,12 @@
       "name": "user2",
       "email": "user2@user.com",
       "password": "123456"
+    },
+    {
+      "id": "c962",
+      "name": "user3",
+      "email": "user3@user.com",
+      "password": "12345678"
     }
   ],
   "posts": [
@@ -32,6 +38,5 @@
       "date": "2025-10-06T16:00:05.687Z",
       "userId": "97a2"
     }
-
   ]
 }
