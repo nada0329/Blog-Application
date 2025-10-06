@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header({ user, isAuthenticated, onLogout }) {
   return (
-    <header className="bg-green-600 text-white shadow-lg">
+    <header className="bg-green-600 text-white shadow-lg fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold">Share The Moment</Link>

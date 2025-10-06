@@ -35,7 +35,7 @@ export default function App() {
         <Route path="/" element={
           <Home 
             user={user}
-            isAuthenticated={false}
+            isAuthenticated={isAuthenticated}
           />} />
         <Route path="/login" element={
           <Login 
